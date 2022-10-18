@@ -135,21 +135,24 @@ ul {
 .icon-phone {
   display: flex;
   margin-right: 10px;
-  fill: var(--lead-text-color);
-}
-.icon-mail {
-  display: flex;
-  margin-right: 10px;
-  fill: var(--lead-text-color);
+  fill: currentColor;
 }
 .icon-phone:hover,
 .icon-phone:focus {
   fill: var(--hover-text-color);
 }
+
+.icon-mail {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .icon-mail:hover,
 .icon-mail:focus {
   fill: var(--hover-text-color);
 }
+
 .section.page {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -216,6 +219,8 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  background: rgba(245, 244, 250, 1);
+  border-radius: 4px;
 }
 
 .aside {
@@ -236,6 +241,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* Чим ми займаємося  */
+.section.pic {
+  padding-top: 0;
+}
 .desc-item {
   display: flex;
 }
@@ -260,6 +269,7 @@ ul {
   margin-right: 30px;
 }
 .card {
+  background-color: var(--accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -307,7 +317,7 @@ ul {
 }
 .team-link:hover,
 .team-link:focus {
-  fill: var(--accent-color);
+  fill: var(--accent-text-color);
   background-color: rgba(33, 150, 243, 1);
 }
 .clients {
@@ -484,6 +494,7 @@ ul {
 }
 
 .filtr-title {
+  color: var(--main-text-color);
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
